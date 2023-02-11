@@ -11,7 +11,7 @@ export default function Home() {
             const data = await fetch(`https://market-rakshith-u-r.vercel.app/market?market_id=${marketId}`).then(res => res.json());
 
             console.log(data);
-            setScore(data);
+            setScore(data.market_id);
         } catch (error) {
             console.error(error);
         }
