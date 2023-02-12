@@ -9,7 +9,7 @@ export default function PChart() {
     const ploting = async (e) => {
         // e.preventDefault();
         try {
-            const data = await fetch(`https://zerodown-market.onrender.com/top5`).then(res => res.json());
+            const data = await fetch(`https://market-rakshith-u-r.vercel.app/top5`).then(res => res.json());
             let chartData = []
             let max = 0
             Object.entries(data).forEach(([key, value]) => {
